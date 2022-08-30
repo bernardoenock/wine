@@ -7,7 +7,7 @@ export const Body = styled.div`
 
   * {
     scrollbar-width: thin;
-    scrollbar-color: ${({ theme }) => theme.textColors.titlePrimary};
+    scrollbar-color: ${({ theme }) => theme.textColors.whiteBlur};
   }
 `;
 
@@ -19,7 +19,7 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         box-sizing: border-box;
         outline: 0;
-        font-family: "Poppins", sans-serif;
+        font-family: 'Lato';
         transition: all 0.5s ease;
     }
 

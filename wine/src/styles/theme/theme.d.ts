@@ -5,46 +5,38 @@ declare module "styled-components" {
     backgroundColors: {
       primaryBackground: string;
       secondaryBackground: string;
-      dashboardBackground: string;
-      transactionsBackground: string;
-      containerTransactions: string;
+      thirdBackground: string;
     };
 
     textColors: {
-      titlePrimary: string;
-      titleSecondary: string;
-      subTitlePrimary: string;
-      subTitleSecondary: string;
-      textColor: string;
-      linkColor: string;
-      deactivate: string;
+      textColor01: string;
+      textColor02: string;
+      textColor03: string;
+      textColor04: string;
+      textColor05: string;
+      textColor06: string;
+      textColor07: string;
+      textColor08: string;
+      textPrice: string;
+      textLargePrice: string;
+      textSelect: string;
+      whiteBlur: string;
     };
 
     buttonColor: {
-      entranceButton: string;
-      exitButton: string;
-      generalButtons: string;
-      backButton: string;
+      primaryButton: string;
+      textButton: string;
+      secondaryButton: string;
+      thirdButton: string;
     };
 
-    typesColors: {
-      entrancecolor: string;
-      exitcolor: string;
-    };
-
-    scoolBar: {
-      background: string;
-      color: string;
-    };
-
-    modalColors: {
-      backgroundColor: string;
-      fontColor: string;
-      buttonsColor: string;
-    };
-
-    inputColors: {
-      backgroundColor: string;
+    borderColor: {
+      border01: string;
+      border02: string;
+      border03: string;
+      border04: string;
+      border05: string;
+      border06: string;
     };
   }
 }

@@ -2,93 +2,78 @@ import { DefaultTheme } from "styled-components";
 
 export const darkTheme: DefaultTheme = {
   backgroundColors: {
-    primaryBackground: "#5A5A5A",
-    secondaryBackground: "#282928",
-    dashboardBackground: "#282928",
-    transactionsBackground: "#282928",
-    containerTransactions: "#5A5A5A",
+    primaryBackground: "#212121",
+    secondaryBackground: "#000000",
+    thirdBackground: "#151515",
   },
 
   textColors: {
-    titlePrimary: "#2AD986",
-    titleSecondary: "#2AD986",
-    subTitlePrimary: "#000000",
-    subTitleSecondary: "#FFFFFF",
-    textColor: "#FFFFFF",
-    linkColor: "#01E1FF",
-    deactivate: "#FFFCFC",
+    textColor01: "#ffffff",
+    textColor02: "#eeeeee",
+    textColor03: "#e2e2e4",
+    textColor04: "#d9d9d9",
+    textColor05: "#cccccc",
+    textColor06: "#aaaaaa",
+    textColor07: "#999999",
+    textColor08: "#777777",
+    textPrice: "#49ee91",
+    textLargePrice: "#37e587",
+    textSelect: "#2eb470",
+    whiteBlur: "#FFFCFC",
   },
 
   buttonColor: {
-    entranceButton: "#21CC3C",
-    exitButton: "#D92A2A",
-    generalButtons: "#2AD986",
-    backButton: "#2AD986",
+    primaryButton: "#8143bc",
+    textButton: "#FFFFFF",
+    secondaryButton: "#B6116E",
+    thirdButton: "#FFFFFF",
   },
 
-  typesColors: {
-    entrancecolor: "#00FF75",
-    exitcolor: "#FF2727",
-  },
-
-  scoolBar: {
-    background: "#5A5A5A",
-    color: "#3D3E3D",
-  },
-
-  modalColors: {
-    backgroundColor: "#282928",
-    fontColor: "#FFFFFF",
-    buttonsColor: "#FFFFFF",
-  },
-
-  inputColors: {
-    backgroundColor: "#5A5A5A",
+  borderColor: {
+    border01: "#555555",
+    border02: "#8143bc",
+    border03: "#B6116E",
+    border04: "#111111",
+    border05: "#EAEAEA",
+    border06: "#FFFFFF",
   },
 };
 
 export const lightTheme: DefaultTheme = {
   backgroundColors: {
-    primaryBackground: "#FFFFFF",
-    secondaryBackground: "#DAFFE9",
-    dashboardBackground: "#FFFFFF",
-    transactionsBackground: "#FFFFFF",
-    containerTransactions: "#DAFFE9",
+    primaryBackground: "#DEDEDE",
+    secondaryBackground: "#FFFFFF",
+    thirdBackground: "#EAEAEA",
   },
 
   textColors: {
-    titlePrimary: "#36FF93",
-    titleSecondary: "#000000",
-    subTitlePrimary: "#FFFFFF",
-    subTitleSecondary: "#282928",
-    textColor: "#282928",
-    linkColor: "#01E1FF",
-    deactivate: "#ABABAB",
+    textColor01: "#000000",
+    textColor02: "#111111",
+    textColor03: "#1D1D1B",
+    textColor04: "#262626",
+    textColor05: "#333333",
+    textColor06: "#555555",
+    textColor07: "#666666",
+    textColor08: "#888888",
+    textPrice: "#B6116E",
+    textLargePrice: "#C81A78",
+    textSelect: "#D14B8F",
+    whiteBlur: "#FFFCFC",
   },
 
   buttonColor: {
-    entranceButton: "#21CC3C",
-    exitButton: "#D92A2A",
-    generalButtons: "#FFFFFF",
-    backButton: "#2AD986",
+    primaryButton: "#7EBC43",
+    textButton: "#FFFFFF",
+    secondaryButton: "#B6116E",
+    thirdButton: "#FFFFFF",
   },
 
-  typesColors: {
-    entrancecolor: "#00FF75",
-    exitcolor: "#FF2727",
-  },
-
-  scoolBar: {
-    background: "#DAFFE9",
-    color: "#90FFC4",
-  },
-
-  modalColors: {
-    backgroundColor: "#DAFFE9",
-    fontColor: "#000000",
-    buttonsColor: "#000000",
-  },
-  inputColors: {
-    backgroundColor: "#FFFFFF",
+  borderColor: {
+    border01: "#555555",
+    border02: "#7EBC43",
+    border03: "#B6116E",
+    border04: "#111111",
+    border05: "#EAEAEA",
+    border06: "#FFFFFF",
   },
 };

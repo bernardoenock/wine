@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const Box = styled.button`
   background-color: ${(props) =>
     props.theme.backgroundColors.secondaryBackground};
-  width: 60px;
-  height: 37px;
+  width: 40px;
+  height: 25px;
 
   border-radius: 20px;
   padding: 2px;

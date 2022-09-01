@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 import Logo from "../../../assets/logo.png";
-import Bag from "../../../assets/bag.png";
 
 import ThemeSelect from "../../ThemeSelect";
 import * as S from "./styles";
 import { AiOutlineSearch, AiOutlineUser } from "react-icons/ai";
+import CounterBag from "../../CounterBag";
 const HeaderDesck: React.FC = () => (
   <S.HeaderDeskContainer>
     <S.Header>
@@ -23,15 +23,9 @@ const HeaderDesck: React.FC = () => (
       <S.CircleIcons>
         <AiOutlineUser />
       </S.CircleIcons>
-      <S.CardCounter>
-        {/* <Image
-          src={Bag}
-          alt="Sacola de compras, produtos na sacola: X"
-          width={45}
-          height={40}
-        /> */}
-        <S.Bag></S.Bag>
-      </S.CardCounter>
+      <S.BagButton>
+        <CounterBag />
+      </S.BagButton>
     </S.Header>
     <ThemeSelect />
   </S.HeaderDeskContainer>

@@ -16,8 +16,8 @@ export const Container = styled.div`
 `;
 
 export const Main = styled.main`
-  width: 100%;
-  height: 70%;
+  width: 100vw;
+  height: 300%;
   display: flex;
   flex-direction: column;
   align-items: center;

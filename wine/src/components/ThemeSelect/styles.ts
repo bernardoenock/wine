@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Box = styled.button`
-  background-color: ${(props) =>
-    props.theme.backgroundColors.secondaryBackground};
+  background-color: ${({ theme }) => theme.borderColor.border03};
   width: 40px;
   height: 25px;
 
@@ -17,7 +16,7 @@ export const Button = styled.span`
   width: 55%;
   height: 90%;
   border-radius: 15px;
-  background: #707070;
+  background-color: ${({ theme }) => theme.borderColor.border04};
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,11 +33,11 @@ export const Button = styled.span`
     border-radius: 50%;
     padding: 2px;
     color: #f5ff62;
-    background-color: #707070;
+    background-color: ${({ theme }) => theme.borderColor.border02};
     transition: 0.5s;
     &:hover {
       background-color: #f5ff62;
-      color: #707070;
+      color: ${({ theme }) => theme.borderColor.border02};
     }
   }
 `;

@@ -53,7 +53,7 @@ export const CircleIcons = styled.button`
 
   font-size: 2.3rem;
   color: ${({ theme }) => theme.textColors.textColor06};
-  border: 2px solid ${({ theme }) => theme.textColors.textColor07};
+  border: 2px solid ${({ theme }) => theme.textColors.textColor06};
   border-radius: 50%;
 
   background-color: ${({ theme }) =>
@@ -63,23 +63,6 @@ export const CircleIcons = styled.button`
   height: 48px;
 `;
 
-export const CardCounter = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border: 2px solid #f6b554;
-  background-color: #f6b554;
-  border-radius: 50%;
-  width: 48px;
-  height: 48px;
-`;
-
-export const Bag = styled.div`
-  background-image: url(${BagUrl.src});
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 48px;
-  height: 48px;
-  border-radius: 0 0 50% 50%;
+export const BagButton = styled.button`
+  background: none;
 `;

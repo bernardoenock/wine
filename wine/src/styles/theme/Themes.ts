@@ -3,7 +3,7 @@ import { DefaultTheme } from "styled-components";
 export const darkTheme: DefaultTheme = {
   backgroundColors: {
     primaryBackground: "#212121",
-    secondaryBackground: "#000000",
+    secondaryBackground: "#8143bc",
     thirdBackground: "#151515",
   },
 
@@ -13,7 +13,7 @@ export const darkTheme: DefaultTheme = {
     textColor03: "#e2e2e4",
     textColor04: "#d9d9d9",
     textColor05: "#cccccc",
-    textColor06: "#aaaaaa",
+    textColor06: "#ffffff",
     textColor07: "#999999",
     textColor08: "#777777",
     textPrice: "#49ee91",

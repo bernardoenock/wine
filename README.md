@@ -30,7 +30,7 @@ Funcionalidades desenvolvidas:
 
 ## 📋 Aplicação em nextJS
 
-- [-] Layout igual ao figma da wine
+- [x] Layout semelhante da wine
 - [x] Utilize Next.js e Typescript
 - [x] Estilização com styled-components
 - [x] Local storage para gerenciar produtos

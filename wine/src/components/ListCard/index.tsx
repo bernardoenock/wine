@@ -3,7 +3,8 @@
 import { useEffect, useState } from "react";
 import { IListProduct, IProduct } from "../../interfaces";
 
-import Card from "./Card"
+import Card from "./Card";
+import { Container, Ulist } from "./styles";
 
 // import { getServerSideProps } from "../../api";
 // import { GetServerSideProps } from "next";
@@ -26,11 +27,15 @@ export default function ListCard({ products }: IP) {
   console.log(products);
 
   return (
-    <ul>
-      {products.map((product) => (
-        <li key={product.id}><Card product={product}/></li>
-      ))}
-    </ul>
+    <Container>
+      <Ulist>
+        {products.map((product) => (
+          <li key={product.id}>
+            <Card product={product} />
+          </li>
+        ))}
+      </Ulist>
+    </Container>
   );
 }
 

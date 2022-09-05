@@ -8,26 +8,35 @@ O objetivo deste desafio é avaliar minhas habilidades de programação.
 
 > ⚠️ **Desafio front end da wine!**
 
+# 🚀 Start Aplicação Local
+
+- Clone o repositorio
+- Digite `yarn` no terminal para intalar as dependencias
+- Digite `yarn dev` para rodar a aplicação localmente
+- Ou visualize nessa pagina:
+
+> ⚠️ **Nota para o recrutador--> Ola, gostaria de informar que por conta do meu trabalho atual não tive tempo de completar 100% do teste. Segue a minha tentativa mesmo assim. Obrigado pela oportunidade e pelo conhecimento adiquirido!**
+
 # 🧠 Contexto
 
 ![Protótipo](https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Captura%20de%20Tela%202021-11-01%20a%CC%80s%2014.44.04.png?alt=media&token=92acea99-9f2d-46b5-bced-4b384acf808f)
 
 Funcionalidades desenvolvidas:
 
-- [ ] Catálogo de produtos com paginação
+- [x] Catálogo de produtos com paginação
 - [ ] Filtragem produtos por preço
 - [ ] Busca por nome do produto
 - [ ] Adicionar e remover produtos do carrinho
 
 ## 📋 Aplicação em nextJS
 
-- [ ] Layout igual ao figma da wine
+- [/] Layout igual ao figma da wine
 - [x] Utilize Next.js e Typescript
 - [x] Estilização com styled-components
-- [ ] Local storage para gerenciar o carrinho
-- [ ] README com as instruções de instalação do projeto
+- [x] Local storage para gerenciar produtos
+- [x] README com as instruções de instalação do projeto
 - [x] Thema dark
-- [ ] Consumir **API Rest** da wine
+- [x] Consumir **API Rest** da wine
 
 ## 📋 Aplicação em React Native
 
@@ -52,7 +61,7 @@ Funcionalidades desenvolvidas:
 
 ## 😎 Extras
 
-- [ ] Fazer deploy na vercel ou em outro local de sua preferência e disponibilizar um link de visualização
+- [x] Fazer deploy na vercel ou em outro local de sua preferência e disponibilizar um link de visualização
 - [ ] Testes unitários
 - [ ] Utilização de cache do Next.js
 

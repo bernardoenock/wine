@@ -9,7 +9,7 @@ export const Button = styled.div`
   width: 256px;
   height: 39.36px;
 
-  background-color: #7ebc43;
+  background-color: ${({ theme }) => theme.buttonColor.primaryButton};
 
   box-shadow: 0px 0.973384px 1.94677px rgba(0, 0, 0, 0.2);
   border-radius: 3.89354px;
@@ -22,7 +22,7 @@ export const Button = styled.div`
     text-align: center;
 
     color: #ffffff;
-    background-color: #7ebc43;
+    background-color: ${({ theme }) => theme.buttonColor.primaryButton};
   }
 
   &:hover {

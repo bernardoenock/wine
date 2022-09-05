@@ -11,7 +11,7 @@ export const ContainerFilter = styled.div`
     font-size: 20px;
     line-height: 24px;
 
-    color: #000000;
+    color: ${({ theme }) => theme.textColors.textColor01};
   }
 
   p {
@@ -25,7 +25,7 @@ export const ContainerFilter = styled.div`
 
     margin: 2rem 0 1rem 0;
 
-    color: #333333;
+    color: ${({ theme }) => theme.textColors.textColor05};
   }
 
   @media screen and (max-width: 768px) {
@@ -44,5 +44,5 @@ export const ContainerInput = styled.div`
 
   margin-bottom: 1rem;
 
-  color: #1d1d1b;
+  color: ${({ theme }) => theme.textColors.textColor03};
 `;

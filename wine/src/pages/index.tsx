@@ -1,16 +1,26 @@
-import { NextPage } from "next";
 import Head from "next/head";
 
 import Header from "../components/Header";
-import ListCard from "../components/ListCard";
+import Products from "../components/Products";
 import { Container, Main } from "../styles/Home/styles";
 
-import { IProductResponse } from "../interfaces";
+import { IDataProduct } from "../interfaces";
 
 import { GetStaticProps } from "next";
 import { loadProducts } from "../lib/load-products";
 
-const Home = ({ products }: IProductResponse) => {
+const Home = ({ data }: IDataProduct) => {
+  localStorage.clear();
+  const setData = JSON.stringify(data);
+  localStorage.setItem("@Products:", setData);
+
+  const teste = localStorage.getItem("@Products:");
+
+  if (typeof teste === "string") {
+    const parse = JSON.parse(teste);
+    console.log("----->", parse);
+  }
+
   return (
     <div>
       <Head>
@@ -19,8 +29,7 @@ const Home = ({ products }: IProductResponse) => {
       <Container>
         <Header />
         <Main>
-          <h1>WINEsss</h1>
-          <ListCard products={products} />
+          <Products data={data} />
         </Main>
       </Container>
     </div>
@@ -34,7 +43,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
   return {
     props: {
-      products: data.items,
+      data: data,
     },
     revalidate: 60 * 60 * 4,
   };

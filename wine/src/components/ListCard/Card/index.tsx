@@ -13,16 +13,32 @@ const Card: React.FC<IProductCard> = ({ product }) => {
           <h2>{product.name}</h2>
 
           <S.PriceDiscont>
-            <S.Price>R${product.price}</S.Price>
+            <S.Price>
+              {product.price.toLocaleString("pt-br", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </S.Price>
             <S.Discount>{product.discount}% OFF</S.Discount>
           </S.PriceDiscont>
 
           <S.Member>
             <p>SOCIO WINE</p>
-            <span>R${product.priceMember}</span>
+            <span>
+              {product.priceMember.toLocaleString("pt-br", {
+                style: "currency",
+                currency: "BRL",
+              })}
+            </span>
           </S.Member>
 
-          <S.NonMember>NAO SOCIO R${product.priceNonMember}</S.NonMember>
+          <S.NonMember>
+            NAO SOCIO{" "}
+            {product.priceNonMember.toLocaleString("pt-br", {
+              style: "currency",
+              currency: "BRL",
+            })}
+          </S.NonMember>
         </S.ContainerInfo>
       </S.CardContainer>
 

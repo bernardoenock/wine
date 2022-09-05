@@ -1,31 +1,13 @@
-//
-
-import { useEffect, useState } from "react";
-import { IListProduct, IProduct } from "../../interfaces";
+import { IProduct } from "../../interfaces";
 
 import Card from "./Card";
 import { Container, Ulist } from "./styles";
 
-// import { getServerSideProps } from "../../api";
-// import { GetServerSideProps } from "next";
-
-interface IP {
+interface IListProducts {
   products: IProduct[];
 }
 
-export default function ListCard({ products }: IP) {
-  //   const [list, setList] = useState<IProduct[]>([]);
-
-  //   useEffect(() => {
-  //     fetch("https://wine-back-test.herokuapp.com/products?page=1&limit=10")
-  //       .then((res) => res.json())
-  //       .then((data) => {
-  //         setList(data.items);
-  //       });
-  //   }, []);
-
-  console.log(products);
-
+export default function ListCard({ products }: IListProducts) {
   return (
     <Container>
       <Ulist>
@@ -38,26 +20,3 @@ export default function ListCard({ products }: IP) {
     </Container>
   );
 }
-
-// export default ListCard;
-
-// interface IAPIRes {
-//   props: {
-//     products: IProduct[];
-//   };
-// }
-
-// export const getServerSideProps: GetServerSideProps =
-//   async (): Promise<IAPIRes> => {
-//     const res = await fetch(
-//       "https://wine-back-test.herokuapp.com/products?page=1&limit=10"
-//     );
-
-//     const data = await res.json();
-
-//     return {
-//       props: {
-//         products: data.items,
-//       },
-//     };
-//   };

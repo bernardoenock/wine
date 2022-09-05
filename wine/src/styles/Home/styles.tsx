@@ -2,12 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 300vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 40px;
   background-color: ${({ theme }) => theme.backgroundColors.primaryBackground};
 
   @media screen and (max-height: 420px) {
@@ -22,7 +21,7 @@ export const Main = styled.main`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding: 10px 20px;
+  padding: 0 1% 10% 1%;
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

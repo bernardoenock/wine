@@ -13,7 +13,7 @@ O objetivo deste desafio é avaliar minhas habilidades de programação.
 - Clone o repositorio
 - Digite `yarn` no terminal para intalar as dependencias
 - Digite `yarn dev` para rodar a aplicação localmente
-- Ou visualize nessa pagina:
+- Ou visualize nessa pagina: https://winenock-8udiuts7d-bernardoenock.vercel.app/
 
 > ⚠️ **Nota para o recrutador--> Ola, gostaria de informar que por conta do meu trabalho atual não tive tempo de completar 100% do teste. Segue a minha tentativa mesmo assim. Obrigado pela oportunidade e pelo conhecimento adiquirido!**
 

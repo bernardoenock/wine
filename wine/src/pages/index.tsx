@@ -7,19 +7,23 @@ import { Container, Main } from "../styles/Home/styles";
 import { IDataProduct } from "../interfaces";
 
 import { GetStaticProps } from "next";
-import { loadProducts } from "../lib/load-products";
+import { loadAllProducts, loadProductsPerPage } from "../lib/load-products";
+
+export const getStaticProps: GetStaticProps = async () => {
+  const data = await loadAllProducts();
+
+  return {
+    props: {
+      data: data,
+    },
+    revalidate: 60 * 60 * 4,
+  };
+};
 
 const Home = ({ data }: IDataProduct) => {
   localStorage.clear();
   const setData = JSON.stringify(data);
   localStorage.setItem("@Products:", setData);
-
-  const teste = localStorage.getItem("@Products:");
-
-  if (typeof teste === "string") {
-    const parse = JSON.parse(teste);
-    console.log("----->", parse);
-  }
 
   return (
     <div>
@@ -29,7 +33,7 @@ const Home = ({ data }: IDataProduct) => {
       <Container>
         <Header />
         <Main>
-          <Products data={data} />
+          <Products />
         </Main>
       </Container>
     </div>
@@ -37,14 +41,3 @@ const Home = ({ data }: IDataProduct) => {
 };
 
 export default Home;
-
-export const getStaticProps: GetStaticProps = async () => {
-  const data = await loadProducts();
-
-  return {
-    props: {
-      data: data,
-    },
-    revalidate: 60 * 60 * 4,
-  };
-};

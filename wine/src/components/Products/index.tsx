@@ -2,20 +2,36 @@ import { IDataProduct } from "../../interfaces";
 import FilterPrice from "../FilterPrice";
 import ListCard from "../ListCard";
 
+import { useEffect, useState } from "react";
+
 import * as S from "./styled";
 
-const Products: React.FC<IDataProduct> = ({ data }) => {
-  return (
-    <S.Container>
-      <FilterPrice />
-      <S.ContainerProduct>
-        <S.Total>
-          <b>{data.totalItems}</b> produtos encontrados
-        </S.Total>
+const Products: React.FC = () => {
+  const [dataProducts, setDataProducts] = useState<IDataProduct>();
+  let verify: string | null;
+  verify = localStorage.getItem("@Products:");
+  useEffect(() => {
+    if (verify) {
+      const data = {
+        data: JSON.parse(verify),
+      };
+      setDataProducts(data);
+    }
+  }, [verify]);
 
-        <ListCard products={data.items} />
-      </S.ContainerProduct>
-    </S.Container>
+  return (
+    <>
+      {dataProducts ? (
+        <S.Container>
+          <FilterPrice />
+          <S.ContainerProduct>
+            <ListCard data={dataProducts.data} />
+          </S.ContainerProduct>
+        </S.Container>
+      ) : (
+        <>Carregando...</>
+      )}
+    </>
   );
 };
 

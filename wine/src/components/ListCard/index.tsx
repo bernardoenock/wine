@@ -1,17 +1,31 @@
-import { IProduct } from "../../interfaces";
+import { useState } from "react";
+import { IDataProduct, IProduct } from "../../interfaces";
+import { pagination } from "../../utils/pagination";
 
 import Card from "./Card";
-import { Container, Ulist } from "./styles";
+import Carousel from "./Carousel";
+import { Container, TopList, Total, Ulist } from "./styles";
 
 interface IListProducts {
   products: IProduct[];
 }
 
-export default function ListCard({ products }: IListProducts) {
+export default function ListCard({ data }: IDataProduct) {
+  const [pageNumber, setPageNumber] = useState(0);
+
+  const page = pagination(data.items, 9);
+
   return (
     <Container>
+      <TopList>
+        <Total>
+          <b>{data.totalItems}</b> produtos encontrados
+        </Total>
+        <Carousel page={page} setPageNumber={setPageNumber} />
+      </TopList>
+
       <Ulist>
-        {products.map((product) => (
+        {page[pageNumber].map((product) => (
           <li key={product.id}>
             <Card product={product} />
           </li>

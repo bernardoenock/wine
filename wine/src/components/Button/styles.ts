@@ -30,3 +30,29 @@ export const Button = styled.div`
     transform: scale(1.03);
   }
 `;
+
+export const PageButton = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: none;
+
+  border: 1px solid #b6116e;
+  border-radius: 3px;
+
+  button {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    width: 100%;
+    height: 100%;
+
+    color: #b6116e;
+  }
+`;

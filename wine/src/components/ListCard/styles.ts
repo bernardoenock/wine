@@ -7,8 +7,11 @@ export const Container = styled.div`
   flex-direction: column;
   width: 100%;
 
-  margin-top: -35rem;
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 `;
+
 export const Ulist = styled.ul`
   display: flex;
   flex-wrap: wrap;

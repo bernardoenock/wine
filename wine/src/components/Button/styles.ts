@@ -29,6 +29,10 @@ export const Button = styled.div`
     cursor: pointer;
     transform: scale(1.03);
   }
+
+  @media screen and (max-width: 768px) {
+    width: 156px;
+  }
 `;
 
 export const PageButton = styled.div`

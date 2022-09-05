@@ -5,6 +5,7 @@ import ListCard from "../ListCard";
 import { useEffect, useState } from "react";
 
 import * as S from "./styled";
+import ListCardMobile from "../ListCardMobile";
 
 const Products: React.FC = () => {
   const [dataProducts, setDataProducts] = useState<IDataProduct>();
@@ -26,6 +27,7 @@ const Products: React.FC = () => {
           <FilterPrice />
           <S.ContainerProduct>
             <ListCard data={dataProducts.data} />
+            <ListCardMobile data={dataProducts.data} />
           </S.ContainerProduct>
         </S.Container>
       ) : (

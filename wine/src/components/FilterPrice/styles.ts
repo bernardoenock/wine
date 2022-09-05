@@ -3,8 +3,7 @@ import styled from "styled-components";
 export const ContainerFilter = styled.div`
   width: 40rem;
   height: 300px;
-  margin: -100rem 5rem 0 5rem;
-
+  margin: 3rem;
   h3 {
     font-family: "Neo Sans Std", sans-serif;
     font-style: normal;
@@ -27,6 +26,10 @@ export const ContainerFilter = styled.div`
     margin: 2rem 0 1rem 0;
 
     color: #333333;
+  }
+
+  @media screen and (max-width: 768px) {
+    display: none;
   }
 `;
 

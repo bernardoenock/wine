@@ -1,7 +1,4 @@
 import styled from "styled-components";
-import { string } from "yup";
-
-import BagUrl from "../../../assets/bag.png";
 
 export const HeaderDeskContainer = styled.section`
   width: 100%;

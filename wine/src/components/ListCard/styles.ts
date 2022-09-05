@@ -6,6 +6,8 @@ export const Container = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
+
+  margin-top: -35rem;
 `;
 export const Ulist = styled.ul`
   display: flex;

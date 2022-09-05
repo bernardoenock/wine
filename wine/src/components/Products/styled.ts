@@ -12,17 +12,3 @@ export const ContainerProduct = styled.div`
   align-items: center;
   flex-direction: column;
 `;
-
-export const Total = styled.h3`
-  font-family: "Lato";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 22px;
-
-  b {
-    font-weight: 900;
-  }
-
-  color: #262626;
-`;

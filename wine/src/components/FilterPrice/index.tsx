@@ -4,17 +4,10 @@ import * as S from "./styles";
 const FilterPrice: React.FC = () => {
   const [conditionPrice, setConditionPrice] = useState("");
 
-  // const handleTest = () => {
-  //   const radio = document.getElementsByName("radio");
-
-  //   console.log(radio);
-
-  // };
-  console.log(conditionPrice);
-
   return (
     <S.ContainerFilter>
       <h3>Refine sua pesquisa</h3>
+      <p>Por preço</p>
       <S.ContainerInput>
         <input
           type="radio"

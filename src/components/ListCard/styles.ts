@@ -40,5 +40,5 @@ export const Total = styled.h3`
     font-weight: 900;
   }
 
-  color: #262626;
+  color: ${({ theme }) => theme.textColors.textColor04};
 `;

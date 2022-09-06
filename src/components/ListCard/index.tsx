@@ -1,14 +1,10 @@
 import { useState } from "react";
-import { IDataProduct, IProduct } from "../../interfaces";
+import { IDataProduct } from "../../interfaces";
 import { pagination } from "../../utils/pagination";
 
 import Card from "./Card";
 import Carousel from "./Carousel";
 import { Container, TopList, Total, Ulist } from "./styles";
-
-interface IListProducts {
-  products: IProduct[];
-}
 
 export default function ListCard({ data }: IDataProduct) {
   const [pageNumber, setPageNumber] = useState(0);

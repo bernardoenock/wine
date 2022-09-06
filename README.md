@@ -1,4 +1,4 @@
-<img src="https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Logo-Wine-990x640.jpeg?alt=media&token=d07a516f-6880-4c8c-8dea-723f36687d95" alt="alt text" width="100%" height="50%">
+<img src="https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Logo-Wine-990x640.jpeg?alt=media&token=d07a516f-6880-4c8c-8dea-723f36687d95" alt="alt text" width="50%" height="25%">
 
 # 🚀 Front end challenge
 
@@ -13,7 +13,7 @@ O objetivo deste desafio é avaliar minhas habilidades de programação.
 - Clone o repositorio
 - Digite `yarn` no terminal para intalar as dependencias
 - Digite `yarn dev` para rodar a aplicação localmente
-- Ou visualize nessa pagina: https://winenock-8udiuts7d-bernardoenock.vercel.app/
+- Ou visualize nessa pagina: https://winenock.vercel.app/
 
 > ⚠️ **Nota para o recrutador--> Ola, gostaria de informar que por conta do meu trabalho atual não tive tempo de completar 100% do teste. Segue a minha tentativa mesmo assim. Obrigado pela oportunidade e pelo conhecimento adiquirido!**
 
@@ -30,7 +30,7 @@ Funcionalidades desenvolvidas:
 
 ## 📋 Aplicação em nextJS
 
-- [/] Layout igual ao figma da wine
+- [x] Layout semelhante da wine
 - [x] Utilize Next.js e Typescript
 - [x] Estilização com styled-components
 - [x] Local storage para gerenciar produtos
